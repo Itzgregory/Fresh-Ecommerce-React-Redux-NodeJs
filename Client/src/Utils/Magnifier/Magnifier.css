@@ -1,0 +1,41 @@
+#photo{
+    height: 30vw;
+    width: 28vw;
+}
+
+#photoContainerMagnifier {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 28vw;
+    margin: 0 0 0.7vw 0;
+    z-index: 1001;
+}
+
+
+@media screen and (max-width: 700px) and (min-width: 200px) {
+    #photo{
+        height: 32vw;
+        width: 35vw;
+    }
+    
+    #photoContainerMagnifier {
+        position: relative;
+        left: -5vw;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 28vw;
+        margin: 0 0 0.7vw 0;
+        z-index: 1001;
+    }
+
+}
+/* .lens{
+    border-radius: 100px;
+} */

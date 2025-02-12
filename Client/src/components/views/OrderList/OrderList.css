@@ -1,0 +1,119 @@
+#deleteBtn{
+    margin-top: 2vw;
+}
+
+.orderListGreeting{
+    font-size: 2vw;
+}
+.filter-orders{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.filter-orders label{
+  margin-right: 2vw;
+}
+
+.no-orders{
+  margin-left: 30vw;
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.filter-orders input{
+  margin-right: 0.2vw;
+  text-align: center;
+}
+
+#tableOrder {
+    width: 100%;
+    height: 100%;
+    margin: 30px auto;
+    margin: auto;
+    vertical-align: middle;
+  }  
+  #tableOrder th {
+    font-size: 1vw;
+  }
+
+  #tableOrder td {
+    font-size: 1vw;
+    padding: 1vw;
+  }
+  
+  @media screen and (max-width: 1024px) and (min-width: 768px) {
+    #tableOrder th {
+        font-size: 1.3vw;
+      }    
+      #tableOrder td {
+        font-size: 1.3vw;
+        padding: 1vw;
+      }
+      #btnCheckOrder{
+        font-size: 1.3vw;
+        width: max-content;
+      }
+  }
+  
+  #orderBox{
+   width: 70vw;
+   height: min-content;
+   border: 1px solid black;
+   position: relative;
+   left: 15%;
+   margin-top: 2vw;
+  }
+  #orderHead{
+      display: flex;
+      border: 2px solid black;
+      width: 100%;   
+  }
+  #orderBody{
+    border: 1px solid black;
+}
+
+ 
+  @media screen and (max-width: 768px) and (min-width: 480px) {
+    #orderHead p, #orderFoot p{
+        padding: 1vw;     
+        font-size: 2.5vw;   
+        font-weight: bold;
+
+    }
+    #orderBody p{
+        padding: 1px;
+        margin: 1%;
+        text-align: start;
+        font-size: 2.5vw;   
+
+     }
+     #btnCheckOrder{
+        margin: 2vw;
+     }
+   }
+
+   @media screen and (max-width: 488px) and (min-width: 200px) {
+    #orderHead p, #orderFoot p{
+        padding: 1vw;     
+        font-size: 3vw;   
+        font-weight: bold;
+
+    }
+    #orderBody p{
+        padding: 1px;
+        margin: 1%;
+        text-align: start;
+        font-size: 3vw;  
+
+     }
+     #btnCheckOrder{
+        height: auto;
+        width: auto;
+        font-size: 3vw;
+        margin: 2vw;
+     }
+    
+   }

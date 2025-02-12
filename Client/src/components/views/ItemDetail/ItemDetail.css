@@ -1,0 +1,216 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%
+
+}
+
+#detailled{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+#productContent{
+    height: fit-content;
+    background-color: antiquewhite;
+    border-style: outset;
+    box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    width: fit-content;
+    margin-bottom: 5%;
+}
+
+
+#itemDescription{
+    text-align: center;
+    background-color: white;
+    height: auto;
+    width: 97.2%;   
+    margin-bottom: 1vw;
+    padding: 2vw;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+
+}
+
+.img {
+    max-width: 100%;
+    height: 30vw;
+    background-color: white;    
+
+
+}
+
+#fotoContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 30vw;
+    margin: 0.8vw 0 0.7vw 0;
+}
+
+
+.fotosAux img{
+    width: 4vw;
+    height: 4.5vw;
+    margin-top: 0.8vw;      
+}
+
+.fotosAux {
+    width: min-content;
+    height: fit-content;
+    background-color: white;
+    margin-top: 0.8vw;
+    padding-bottom: 0.5vw;
+    border: 1px solid;
+}
+
+.fotosAux img:hover {
+    background-color: #DDD;
+}
+
+#cardBtns{
+    height: fit-content;
+    width: min-content;
+    padding-top: 1vw;
+}
+
+
+#productName{
+   font-size: 1.2vw;
+}
+#productPrice{
+    font-size: 1vw;
+}
+
+
+#containerUpper{
+    max-width: 50vw;
+    width: auto;
+    margin-left: -1vw;
+}
+
+#cardDetail{
+    height: fit-content;
+    width: 18vw;
+    margin-left: 1vw;
+}
+
+@media screen and (max-width: 700px) and (min-width: 200px) {
+    #photoContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: max-content;
+        width: min-content;
+
+    }  
+    #mainPhoto{
+        width: 30vw;
+        height: auto;
+    }
+    
+    #detailled{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 30vw;
+        height: 30vw;
+        background-color: white;
+        margin-top: 0.1vw;
+        border: 1px solid black;
+        border-radius: 2%;  
+        margin-left: -3vw;      
+    }    
+    #productContent{
+        height: fit-content;
+        background-color: antiquewhite;
+        border-style: outset;
+        box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 0.75);
+        width: 100%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+    }   
+    
+    #photosAux img{
+        width: 9vw;
+        height: 9vw;
+        margin: 0 1vw 0 1vw; 
+        padding: 1vw;
+    }
+    
+    #photosAux {
+        width: 30vw;
+        height: 8.5vw;
+        background-color: white;
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: -5vw;
+        bottom: 3%;
+        
+    }
+
+    #itemDescription{
+        text-align: center;
+        background-color: white;
+        height: auto;
+        width: 97.2%;   
+        margin-bottom: 1vw;
+        padding: 2vw;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    
+    }   
+    
+    #photosAux img:hover {
+        background-color: #DDD;
+    }  
+
+    #productContainer{
+        display: flex;
+    }
+    #cardDetail p{
+        font-size: 2vw;  
+        width: max-content;
+        height: 1vw   ;
+        margin-bottom: 2vw;
+    }
+    #cardDetail{
+        margin-top: 0.1vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative; 
+    }
+    #itemDescription{
+        position: relative;
+        width: 70vw;
+        font-size: 2vw;
+        left: -2vw;
+        margin: 2vw;
+
+        
+
+    }
+}

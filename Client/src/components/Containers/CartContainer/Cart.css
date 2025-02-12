@@ -1,0 +1,19 @@
+#cartMessage{
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.tablero{
+    display: flex;
+    flex-direction: row;
+}
+
+.carritoTable{
+    width: 60%;
+}
+
+.carritoFinish{
+    width: 40%;
+}
+

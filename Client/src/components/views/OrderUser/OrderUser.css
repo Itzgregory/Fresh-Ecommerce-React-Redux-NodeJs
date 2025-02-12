@@ -1,0 +1,61 @@
+.orderUserResume{
+    display: flex;
+    flex-direction: row;
+    border: 2px black solid;
+    background-color: lightgrey;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+.orderUser{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 60vw;
+    position: relative;
+    top: 2vw;
+    left: 15vw;  
+    margin: 2vw;  
+}
+
+.orderUserBox{
+    display: flex;
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.orderUserBox p{
+    padding: 1vw;
+}
+
+.orderUserBody{
+    display: flex;
+    margin: 6vw 0 2vw 0;
+    position: relative;
+}
+.orderUserDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    text-align: start;
+}
+
+.orderUserImage{
+    height: 100%;
+}
+
+#back-orders{
+    margin: 2vw 0 2vw 0;
+    border-radius: 99px;
+    width: fit-content;
+    height: auto;
+    font-size: 1vw;
+
+}

@@ -1,0 +1,91 @@
+#Qty {
+    width: 12vw;
+    height: 2vw;
+    border-radius: 5px;
+    background-color: gainsboro;
+    align-items: center;
+    margin: 0.2vw;
+    text-align: center;
+    font-size: 1vw;
+    box-sizing:border-box;
+
+}
+
+#box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#btn-add {
+    display: block;
+    margin: auto;
+    font-size: 1vw;
+    width: fit-content;
+    height: auto;
+}
+
+
+p {
+    font-size: 1vw;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+#btnContainer{
+    flex-wrap: nowrap;
+}
+
+
+@media screen and (max-width: 700px) and (min-width: 200px) {
+    #Qty {
+        width: 12vw;
+        height: 4vw;
+        border-radius: 5px;
+        background-color: gainsboro;
+        align-items: center;
+        margin: 0.2vw;
+        text-align: center;
+        font-size: 2vw;
+        box-sizing:border-box
+    }
+    
+  
+    #countMinus svg,
+    #countPlus svg {
+        width: 3vw;
+        height: 3vw;
+        text-align: center;
+        display: flex;
+        margin: 1vw;
+        background-color: silver;
+    border-radius: 50%;
+
+    }
+    
+    #box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+    #btnContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #stockItems{
+        font-size: 1.5vw;
+        margin: 1vw;
+    }
+    #btn-add{        
+        text-align: center;
+        font-size: 1.7vw;
+        width: 12vw;
+        height: 6vw;
+        padding: 1vw;
+    }
+}

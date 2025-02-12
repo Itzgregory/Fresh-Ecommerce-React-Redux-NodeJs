@@ -1,0 +1,79 @@
+#cartMessage{
+    width: fit-content;
+}
+.table {
+    width: 90%;
+    height: 100%;
+    margin: 30px auto;
+    margin: auto;
+    vertical-align: middle;
+  }
+  
+  .fotoCart {
+    width: 8vw;
+    height: 8vw;
+  }
+  p, th, td {
+    font-size: 1vw;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+}
+  .table td {
+    text-align: center;
+    margin-top: 5vw;
+  
+  }
+  
+  @media screen and (max-width: 800px) and (min-width: 600px) {
+    .greetingCart {
+      font-size: 1.2rem;
+    }
+  
+    #tableTh {
+      font-size: 2vw;
+      padding: 1vw;
+    }
+    #nameProduct{
+      font-size: 2vw;
+    }
+  
+    #numberTable {
+      font-size: 2vw
+    }
+  }
+  
+  
+  @media screen and (max-width: 599px) and (min-width: 200px) {
+  
+    #btnDeleteQty {
+      width: 14vw;
+      height: fit-content;
+      font-size: 2.5vw;
+    }
+    .greetingCart {
+      font-size: 1.2rem;
+    }
+  
+  
+    #nameProduct{
+      font-size: 2.2vw;
+    }
+    #tableTh{
+      font-size: 2.2vw;
+    }
+  
+    #numberTable {
+      font-size: 2.2vw
+    }
+    .fotoCart {
+      width: 10vw;
+      height: 10vw;
+    }
+  }
+  
+  
+  
+  

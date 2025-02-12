@@ -1,0 +1,136 @@
+.productsCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;     
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    width: 12vw;
+    height: 16vw;
+    
+}
+    #cardItems{
+    height: fit-content;
+    width: fit-content;
+    margin: 1vw;
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}  
+
+#Card{
+    height: 28vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   width: 20vw;
+}
+
+#btnDetail{
+    width: fit-content;
+    height: 3vw;
+    white-space: normal;
+    font-size: 1vw;
+    font-weight: bold;
+}  
+
+#Card, p{
+    font-size: 1.2vw;
+} 
+.card-title, h5{
+    font-size: 1.4vw;
+} 
+
+
+@media screen and (max-width: 480px) and (min-width: 200px) {
+    .card{
+        margin: 3vw;
+        padding: 1vw;
+        align-items: center;
+        text-align: center;
+    
+    }
+    .photo{
+        width: 30vw;
+        height: 30vw;        
+    }
+    
+    #cardItems{
+        height: fit-content;
+        width: 50vw;
+        margin: 3vw 0 3vw 0;
+    }    
+    #Card{
+        height: fit-content;
+        width: 45vw;
+    }
+
+    #Card p{
+        font-size: 3vw;
+    } 
+    .card-title, h5{
+        font-size: 4vw;
+    } 
+    #btnDetail{
+        width: fit-content;
+        height: 9.5vw;
+        white-space: normal;
+        font-size: 3vw;
+        font-weight: bold;
+    }  
+}
+
+
+
+@media screen and (max-width: 990px) and (min-width: 481px) {
+    .photo{
+        width: 25vw;
+        height: 25vw;        
+    }
+    
+    #cardItems{
+        height: 65vw;
+        width: 40vw;
+        margin: 1;
+        padding: 1vw;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        
+        
+    }    
+    #Card{
+        height: 55vw;
+        width: 35vw;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #productPrice{
+        font-size: 3vw;
+    }
+
+    #Card p{
+        font-size: 3vw;
+    } 
+    .card-title, h5{
+        font-size: 4vw;
+    } 
+    #btnDetail{
+        width: fit-content;
+        height: 8.5vw;
+        white-space: normal;
+        font-size: 2.5vw;
+        font-weight: bold;
+    }  
+}
+
+

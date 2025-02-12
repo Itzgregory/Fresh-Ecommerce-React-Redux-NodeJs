@@ -1,0 +1,40 @@
+.table-data {
+    padding-top: 150px;
+  }
+  
+  .Admintable-data__title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .table {
+    width: 90%;
+    height: 100%;
+    margin: 30px auto;
+    margin: auto;
+    vertical-align: middle;
+  }
+  
+  .photoCart {
+    width: 8vw;
+    height: 8vw;
+  }
+  
+  .table td {
+    text-align: center;
+    margin-top: 5vw;
+  }
+
+ 
+  #btnPlus,
+  #btnMinus {
+    width: 1.5vw;
+    height: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+#actionBtn{
+  margin: 1vw;
+}

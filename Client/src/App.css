@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary-color: #bd3133;
+  --secondary-color: #F2E007;
+  --background-color: rgb(209, 82, 82);
+  --button-color: #01345b;
+  --text-color: white;
+  --hover-color: #F2E007;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --count-cart-bg: black;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --button-hover-bg: #bd3133;
+  --button-hover-text: white;
+  --font-family-hollow: 'hollow';
+  --font-family-oswald: 'oswald';
+  --font-family-cabin: 'cabin';
+ 
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}

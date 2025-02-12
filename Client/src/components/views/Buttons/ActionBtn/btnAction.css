@@ -1,0 +1,91 @@
+.btnModify{
+    margin-top: 1vw;
+}
+
+.btnBuy{
+    margin: 1vw 0.5vw 0 0.5vw;
+}
+
+
+.btnContainer{
+    width: max-content;
+}
+@media screen and (min-width: 1200px) {
+    .btnBuy{
+        margin: 1vw 0.5vw 0 0.5vw;
+        height: 3vw;
+        width: 7.7vw;
+        font-size: 1vw;
+    }
+    .btnContainer{
+margin-left: -1vw;        
+    }
+    
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .btnBuy{
+        margin: 1vw 0.2vw 0 0.2vw;
+        height: 3vw;
+        width: 8.4vw;
+        font-size: 1vw;
+    }
+    .btnContainer{
+margin-left: -1.7vw;        
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .btnBuy{
+        margin: 1vw 0.2vw 0 0.2vw;
+        height: 3vw;
+        width: auto;
+        font-size: 1vw;
+    }
+    .btnContainer{
+margin-left: -1.8vw;        
+    }
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+    .btnBuy{
+        margin: 1vw 0.2vw 0 0.2vw;
+        height: 4vw;
+        width: auto;
+        font-size: 1.5vw;
+    }
+    .btnContainer{
+display: flex;
+flex-direction: column;     
+justify-content: center;
+align-items: center;
+margin-left: 7vw;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+    .btnBuy{
+        margin: 1vw;
+        height: 5vw;
+        width: auto;
+        font-size: 2vw;
+        padding: 1vw
+    }
+    .btnContainer{
+display: flex;
+flex-direction: column;     
+justify-content: center;
+align-items: center;
+margin-left: 3vw;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+    #btnModifyQty{
+        width: 14vw;
+        height: fit-content;
+        font-size: 2.5vw;
+    
+    }
+}
