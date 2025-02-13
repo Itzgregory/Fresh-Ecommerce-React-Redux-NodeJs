@@ -24,7 +24,7 @@ export const ItemList = ({ products = [] }) => {
                             <Card.Body>
                                 <Card.Title>{product.name}</Card.Title>
                                 <Card.Text id="productPrice">
-                                    {`Price: ¥ ${product.price}`}
+                                    {`Price: ₦ ${product.price}`}
                                 </Card.Text>
                             </Card.Body>
                             <Link to={`/detail/${product._id}`}>

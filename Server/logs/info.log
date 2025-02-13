@@ -1,0 +1,59 @@
+[2025-02-12 09:40:46] INFO: Database connection established
+[2025-02-12 09:40:46] INFO: Server is listening on port 8080
+[2025-02-12 09:41:39] INFO: [Mongoose] products.find {} {}
+[2025-02-12 09:41:39] INFO: Fetched all products successfully
+[2025-02-12 09:41:39] INFO: Fetched all products successfully
+[2025-02-12 09:44:48] INFO: [Mongoose] products.find {} {}
+[2025-02-12 09:44:48] INFO: Fetched all products successfully
+[2025-02-12 09:44:48] INFO: Fetched all products successfully
+[2025-02-12 09:46:51] INFO: File deleted: \tmp\tmp-1-1739350004337
+[2025-02-12 09:46:51] INFO: [Mongoose] products.findOne {"code":"101ccc"} {}
+[2025-02-12 09:46:51] INFO: [Mongoose] products.insertOne {"timeStamp":"1739350011605","name":"watch","description":"this are wristwatches","code":"101ccc","category":"Hublot","photos":[{"url":"https://res.cloudinary.com/organicstall/image/upload/v1739350010/tj45tcjpaksbqvqre1zv.jpg","id":"tj45tcjpaksbqvqre1zv","_id":"67ac5ffb2ad6ec51fd837650"}],"price":200,"stock":10,"_id":"67ac5ffb2ad6ec51fd83764f"} {}
+[2025-02-12 09:46:51] INFO: Created product successfully: 67ac5ffb2ad6ec51fd83764f
+[2025-02-12 09:46:51] INFO: Product created successfully: 67ac5ffb2ad6ec51fd83764f
+[2025-02-12 09:47:02] INFO: [Mongoose] products.find {} {}
+[2025-02-12 09:47:02] INFO: Fetched all products successfully
+[2025-02-12 09:47:02] INFO: Fetched all products successfully
+[2025-02-12 09:47:27] INFO: File deleted: \tmp\tmp-2-1739350044668
+[2025-02-12 09:47:27] INFO: [Mongoose] products.findOne {"code":"101ccb"} {}
+[2025-02-12 09:47:27] INFO: [Mongoose] products.insertOne {"timeStamp":"1739350047062","name":"watch","description":"this are wristwatches","code":"101ccb","category":"Hublot","photos":[{"url":"https://res.cloudinary.com/organicstall/image/upload/v1739350045/sd1c89pxrjng5h1jzonw.jpg","id":"sd1c89pxrjng5h1jzonw","_id":"67ac601f2ad6ec51fd837655"}],"price":200,"stock":10,"_id":"67ac601f2ad6ec51fd837654"} {}
+[2025-02-12 09:47:27] INFO: Created product successfully: 67ac601f2ad6ec51fd837654
+[2025-02-12 09:47:27] INFO: Product created successfully: 67ac601f2ad6ec51fd837654
+[2025-02-12 09:47:35] INFO: File deleted: \tmp\tmp-3-1739350053764
+[2025-02-12 09:47:35] INFO: [Mongoose] products.findOne {"code":"101ccn"} {}
+[2025-02-12 09:47:35] INFO: [Mongoose] products.insertOne {"timeStamp":"1739350055819","name":"watch","description":"this are wristwatches","code":"101ccn","category":"Hublot","photos":[{"url":"https://res.cloudinary.com/organicstall/image/upload/v1739350054/kivpr4ypwmkl6m5i0s6z.jpg","id":"kivpr4ypwmkl6m5i0s6z","_id":"67ac60272ad6ec51fd837659"}],"price":200,"stock":10,"_id":"67ac60272ad6ec51fd837658"} {}
+[2025-02-12 09:47:35] INFO: Created product successfully: 67ac60272ad6ec51fd837658
+[2025-02-12 09:47:35] INFO: Product created successfully: 67ac60272ad6ec51fd837658
+[2025-02-12 09:47:43] INFO: File deleted: \tmp\tmp-4-1739350061533
+[2025-02-12 09:47:43] INFO: [Mongoose] products.findOne {"code":"101ccb"} {}
+[2025-02-12 09:47:43] INFO: Fetched product by code successfully: 101ccb
+[2025-02-12 09:47:51] INFO: File deleted: \tmp\tmp-5-1739350069452
+[2025-02-12 09:47:51] INFO: [Mongoose] products.findOne {"code":"101ccbc"} {}
+[2025-02-12 09:47:51] INFO: [Mongoose] products.insertOne {"timeStamp":"1739350071468","name":"watch","description":"this are wristwatches","code":"101ccbc","category":"Hublot","photos":[{"url":"https://res.cloudinary.com/organicstall/image/upload/v1739350070/uveoodqrddl7sbh1rljy.jpg","id":"uveoodqrddl7sbh1rljy","_id":"67ac60372ad6ec51fd83765e"}],"price":200,"stock":10,"_id":"67ac60372ad6ec51fd83765d"} {}
+[2025-02-12 09:47:51] INFO: Created product successfully: 67ac60372ad6ec51fd83765d
+[2025-02-12 09:47:51] INFO: Product created successfully: 67ac60372ad6ec51fd83765d
+[2025-02-12 09:47:55] INFO: [Mongoose] products.find {} {}
+[2025-02-12 09:47:56] INFO: Fetched all products successfully
+[2025-02-12 09:47:56] INFO: Fetched all products successfully
+[2025-02-12 09:49:01] INFO: [Mongoose] products.find {} {}
+[2025-02-12 09:49:01] INFO: Fetched all products successfully
+[2025-02-12 09:49:01] INFO: Fetched all products successfully
+[2025-02-12 09:49:18] INFO: File deleted: \tmp\tmp-6-1739350156105
+[2025-02-12 09:49:18] INFO: [Mongoose] products.findOne {"code":"101ccbcv"} {}
+[2025-02-12 09:49:18] INFO: [Mongoose] products.insertOne {"timeStamp":"1739350158642","name":"watch","description":"this are wristwatches","code":"101ccbcv","category":"Hublot","photos":[{"url":"https://res.cloudinary.com/organicstall/image/upload/v1739350157/ixtwiujpjb7liblcoc3l.png","id":"ixtwiujpjb7liblcoc3l","_id":"67ac608e2ad6ec51fd837664"}],"price":200,"stock":10,"_id":"67ac608e2ad6ec51fd837663"} {}
+[2025-02-12 09:49:18] INFO: Created product successfully: 67ac608e2ad6ec51fd837663
+[2025-02-12 09:49:18] INFO: Product created successfully: 67ac608e2ad6ec51fd837663
+[2025-02-12 09:49:24] INFO: [Mongoose] products.find {} {}
+[2025-02-12 09:49:24] INFO: Fetched all products successfully
+[2025-02-12 09:49:24] INFO: Fetched all products successfully
+[2025-02-12 10:05:23] INFO: [Mongoose] products.find {} {}
+[2025-02-12 10:05:23] INFO: Fetched all products successfully
+[2025-02-12 10:05:23] INFO: Fetched all products successfully
+[2025-02-12 16:11:52] INFO: Database connection established
+[2025-02-12 16:11:52] INFO: Server is listening on port 8080
+[2025-02-12 19:29:35] INFO: MongoDB disconnected. Attempting to reconnect...
+[2025-02-12 19:29:40] INFO: Successfully connected to MongoDB
+[2025-02-13 09:57:26] INFO: MongoDB disconnected. Attempting to reconnect...
+[2025-02-13 09:57:27] INFO: MongoDB disconnected. Attempting to reconnect...
+[2025-02-13 09:57:27] INFO: Successfully connected to MongoDB
+[2025-02-13 09:57:27] INFO: Successfully connected to MongoDB
