@@ -1,0 +1,23 @@
+[2025-02-13 20:03:52] ERROR: ForbiddenError: invalid csrf token
+    at csrf (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:280:10)
+    at cookieParser (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:286:9
+[2025-02-13 20:15:59] ERROR: ForbiddenError: invalid csrf token
+    at csrf (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express-session\index.js:514:7
+    at C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\connect-mongo\build\main\lib\MongoStore.js:222:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-02-13 21:18:36] ERROR: Invalid password for user:
+[2025-02-13 22:34:02] ERROR: Invalid password for user:

@@ -1,5 +1,6 @@
 const { userService } = require("../../services/index");
 const {userValidation} = require("../../helpers/validation/userValidation/userValidation");
+const setAuthAndCsrfCookies = require("../../helpers/cookieAndCsrfToken/AuthAndCsrfCookies")
 
 const userControllers = () => {
     return {
@@ -13,14 +14,24 @@ const userControllers = () => {
                         data: null,
                     });
                 }
-
+        
                 const { email, password } = req.body;
                 const result = await userService.authenticateUser(email, password);
-                
+        
+                if (result.success) {
+                    setAuthAndCsrfCookies(res, result.data.token);
+                }
+        
                 return res.status(result.status).json({
                     success: result.success,
                     message: result.message,
-                    data: result.data,
+                    data: {
+                        id: result.data?.id,
+                        email: result.data?.email,
+                        username: result.data?.username,
+                        role: result.data?.role,
+                        token: result.data?.token
+                    }
                 });
             } catch (err) {
                 return res.status(500).json({ 
@@ -60,7 +71,13 @@ const userControllers = () => {
         
         logoutUser: async (req, res, next) => {
             try {
-                const result = await userService.logoutUser(req.headers.authorization);
+                const token = req.cookies.auth_token;
+                const result = await userService.logoutUser(token);
+
+                if (result.success) {
+                    res.clearCookie('auth_token');
+                    res.clearCookie('XSRF-TOKEN');
+                }
 
                 return res.status(result.status).json({
                     success: result.success,

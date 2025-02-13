@@ -13,30 +13,93 @@ class UserService {
             if (!email || !password) {
                 return { status: 400, success: false, message: 'Provide email and password', data: null };
             }
-
+    
             const normalizedEmail = email.trim().toLowerCase();
-
-            const user = await this.userModel.findOne({ email:normalizedEmail });
+    
+            const user = await this.userModel.findOne({ email: normalizedEmail });
             if (!user) {
                 logerror.error('User not found:', email);
                 return { status: 401, success: false, message: 'Invalid credentials', data: null };
             }
-
+    
             const isValidPassword = await this.securityConfig.verifyPassword(user.password, password);
             if (!isValidPassword) {
                 logerror.error('Invalid password for user:', email);
                 return { status: 401, success: false, message: 'Invalid credentials', data: null };
             }
-
-            const accessToken = await generateNormalToken(user);
-            user.tokens = [...(user.tokens || []), accessToken];  
+    
+            let accessToken;
+            try {
+                accessToken = await generateNormalToken(user);
+            } catch (tokenError) {
+                logerror.error('Error generating token:', tokenError);
+                return { status: 500, success: false, message: 'Token generation failed', data: null };
+            }
+    
+            user.tokens = [accessToken];
             user.lastLogin = new Date();
-            await user.save();
-
-            return { status: 200, success: true, message: 'Authentication successful', data: { id: user._id, email: user.email, username:user.username, role:user.role, token: accessToken } };
+    
+            try {
+                await user.save();
+            } catch (saveError) {
+                logerror.error('Error saving user:', saveError);
+                return { status: 500, success: false, message: 'Database update failed', data: null };
+            }
+    
+            const result = { 
+                status: 200, 
+                success: true, 
+                message: 'Authentication successful', 
+                data: { 
+                    id: user._id, 
+                    email: user.email, 
+                    username: user.username, 
+                    role: user.role, 
+                    token: accessToken 
+                } 
+            };
+            
+            return result;
+            
         } catch (err) {
-            logerror.error('Error authenticating user:', err);
+            logerror.error('Unexpected error authenticating user:', err);
             return { status: 500, success: false, message: 'Authentication failed', data: null };
+        }
+    }
+    
+    
+    async verifyAuthToken(req, res, next) {
+        try {
+            const token = req.cookies.auth_token;
+            
+            if (!token) {
+                return res.status(401).json({
+                    success: false,
+                    message: 'Authentication required',
+                    data: null
+                });
+            }
+
+            const user = await this.userModel.findOne({ tokens: token });
+            if (!user) {
+                res.clearCookie('auth_token');
+                return res.status(401).json({
+                    success: false,
+                    message: 'Invalid token',
+                    data: null
+                });
+            }
+
+            req.user = user;
+            req.token = token;
+            next();
+        } catch (err) {
+            logerror.error('Token verification error:', err);
+            return res.status(401).json({
+                success: false,
+                message: 'Authentication failed',
+                data: null
+            });
         }
     }
 

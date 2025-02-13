@@ -1,21 +1,27 @@
-import { Navigate, Route, Routes } from 'react-router';
+import { Navigate, Route, Routes, useNavigate } from 'react-router';
+import { useEffect } from 'react';
 import { ModifyProduct, AdminContainer, AddProductContainer } from '../../components';
-import { useSelector } from 'react-redux' 
-
+import { getUserRole, isTokenValid} from '../../Utils/auth/authUtils';
 
 export const PrivateRoute = () => {
-    const userState = useSelector((state) => state.user.User)
-    console.log(userState.admin)
-    return (
-        <>
-            <Routes>
-                <Route path='/' element={userState.admin ? <AdminContainer/> : <Navigate to='/' replace/>}/>
-                <Route path='/:id' element={userState.admin  ? <ModifyProduct /> : <Navigate to='/' replace />} />
-                <Route path='/add' element={userState.admin ? <AddProductContainer /> : <Navigate to='/' replace />} />
-                <Route path="*" element={<Navigate to='/' replace />} />
-            </Routes>
-        </>
-    );
-}
+    const navigate = useNavigate();
+    
+    useEffect(() => {
+        const userRole = getUserRole();
+        const isAuthenticated = isTokenValid();
+        
+        if (!isAuthenticated || userRole !== 'admin') {
+            navigate('/', { replace: true });
+        }
+    }, [navigate]);
 
-export default PrivateRoute;
+    return (
+        <Routes>
+            <Route path="/" element={<AdminContainer />} />
+            <Route path="/:id" element={<ModifyProduct />} />
+            <Route path="/add" element={<AddProductContainer />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+    );
+};
+

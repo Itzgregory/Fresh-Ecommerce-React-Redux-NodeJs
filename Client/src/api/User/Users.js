@@ -1,24 +1,29 @@
-import  axiosInstance  from '../../Utils/axios/axiosInstance';
+import { setAuthToken } from '../../Utils/auth/authUtils';
+import axiosInstance from '../../Utils/axios/axiosInstance';
 import handleError from '../../Utils/HandleErrors/ErrorHandler';
 
-
-export const userLogin = async (data) => {
+export const userLogin = async (data, navigate) => {
   const url = `/login`;
   try {
     const query = await axiosInstance.post(url, data);
-    if(query.data?.token){
-      localStorage.setItem('authToken', query.data.token);
-      localStorage.setItem('role', query.data.user?.role);
-      localStorage.setItem('tokenExpiry', JSON.stringify(Date.now()+3600000));
+    if (query.data?.token) {
+      setAuthToken(query.data.token, query.data.user?.role);
+
+      if (query.data.user?.role === 'admin') {
+        navigate('/admin'); 
+      } else {
+        navigate('/'); 
+      }
     }
-    return query.data;  
+    return query.data;
   } catch (error) {
     if (!error.response || error.response.status !== 401) {
       handleError(error);
     }
-    throw error;  
+    throw error;
   }
 };
+
 
 export const registerUser = async (data) => {
   try {

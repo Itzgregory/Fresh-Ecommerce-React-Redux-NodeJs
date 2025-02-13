@@ -1,59 +1,58 @@
-[2025-02-12 09:40:46] INFO: Database connection established
-[2025-02-12 09:40:46] INFO: Server is listening on port 8080
-[2025-02-12 09:41:39] INFO: [Mongoose] products.find {} {}
-[2025-02-12 09:41:39] INFO: Fetched all products successfully
-[2025-02-12 09:41:39] INFO: Fetched all products successfully
-[2025-02-12 09:44:48] INFO: [Mongoose] products.find {} {}
-[2025-02-12 09:44:48] INFO: Fetched all products successfully
-[2025-02-12 09:44:48] INFO: Fetched all products successfully
-[2025-02-12 09:46:51] INFO: File deleted: \tmp\tmp-1-1739350004337
-[2025-02-12 09:46:51] INFO: [Mongoose] products.findOne {"code":"101ccc"} {}
-[2025-02-12 09:46:51] INFO: [Mongoose] products.insertOne {"timeStamp":"1739350011605","name":"watch","description":"this are wristwatches","code":"101ccc","category":"Hublot","photos":[{"url":"https://res.cloudinary.com/organicstall/image/upload/v1739350010/tj45tcjpaksbqvqre1zv.jpg","id":"tj45tcjpaksbqvqre1zv","_id":"67ac5ffb2ad6ec51fd837650"}],"price":200,"stock":10,"_id":"67ac5ffb2ad6ec51fd83764f"} {}
-[2025-02-12 09:46:51] INFO: Created product successfully: 67ac5ffb2ad6ec51fd83764f
-[2025-02-12 09:46:51] INFO: Product created successfully: 67ac5ffb2ad6ec51fd83764f
-[2025-02-12 09:47:02] INFO: [Mongoose] products.find {} {}
-[2025-02-12 09:47:02] INFO: Fetched all products successfully
-[2025-02-12 09:47:02] INFO: Fetched all products successfully
-[2025-02-12 09:47:27] INFO: File deleted: \tmp\tmp-2-1739350044668
-[2025-02-12 09:47:27] INFO: [Mongoose] products.findOne {"code":"101ccb"} {}
-[2025-02-12 09:47:27] INFO: [Mongoose] products.insertOne {"timeStamp":"1739350047062","name":"watch","description":"this are wristwatches","code":"101ccb","category":"Hublot","photos":[{"url":"https://res.cloudinary.com/organicstall/image/upload/v1739350045/sd1c89pxrjng5h1jzonw.jpg","id":"sd1c89pxrjng5h1jzonw","_id":"67ac601f2ad6ec51fd837655"}],"price":200,"stock":10,"_id":"67ac601f2ad6ec51fd837654"} {}
-[2025-02-12 09:47:27] INFO: Created product successfully: 67ac601f2ad6ec51fd837654
-[2025-02-12 09:47:27] INFO: Product created successfully: 67ac601f2ad6ec51fd837654
-[2025-02-12 09:47:35] INFO: File deleted: \tmp\tmp-3-1739350053764
-[2025-02-12 09:47:35] INFO: [Mongoose] products.findOne {"code":"101ccn"} {}
-[2025-02-12 09:47:35] INFO: [Mongoose] products.insertOne {"timeStamp":"1739350055819","name":"watch","description":"this are wristwatches","code":"101ccn","category":"Hublot","photos":[{"url":"https://res.cloudinary.com/organicstall/image/upload/v1739350054/kivpr4ypwmkl6m5i0s6z.jpg","id":"kivpr4ypwmkl6m5i0s6z","_id":"67ac60272ad6ec51fd837659"}],"price":200,"stock":10,"_id":"67ac60272ad6ec51fd837658"} {}
-[2025-02-12 09:47:35] INFO: Created product successfully: 67ac60272ad6ec51fd837658
-[2025-02-12 09:47:35] INFO: Product created successfully: 67ac60272ad6ec51fd837658
-[2025-02-12 09:47:43] INFO: File deleted: \tmp\tmp-4-1739350061533
-[2025-02-12 09:47:43] INFO: [Mongoose] products.findOne {"code":"101ccb"} {}
-[2025-02-12 09:47:43] INFO: Fetched product by code successfully: 101ccb
-[2025-02-12 09:47:51] INFO: File deleted: \tmp\tmp-5-1739350069452
-[2025-02-12 09:47:51] INFO: [Mongoose] products.findOne {"code":"101ccbc"} {}
-[2025-02-12 09:47:51] INFO: [Mongoose] products.insertOne {"timeStamp":"1739350071468","name":"watch","description":"this are wristwatches","code":"101ccbc","category":"Hublot","photos":[{"url":"https://res.cloudinary.com/organicstall/image/upload/v1739350070/uveoodqrddl7sbh1rljy.jpg","id":"uveoodqrddl7sbh1rljy","_id":"67ac60372ad6ec51fd83765e"}],"price":200,"stock":10,"_id":"67ac60372ad6ec51fd83765d"} {}
-[2025-02-12 09:47:51] INFO: Created product successfully: 67ac60372ad6ec51fd83765d
-[2025-02-12 09:47:51] INFO: Product created successfully: 67ac60372ad6ec51fd83765d
-[2025-02-12 09:47:55] INFO: [Mongoose] products.find {} {}
-[2025-02-12 09:47:56] INFO: Fetched all products successfully
-[2025-02-12 09:47:56] INFO: Fetched all products successfully
-[2025-02-12 09:49:01] INFO: [Mongoose] products.find {} {}
-[2025-02-12 09:49:01] INFO: Fetched all products successfully
-[2025-02-12 09:49:01] INFO: Fetched all products successfully
-[2025-02-12 09:49:18] INFO: File deleted: \tmp\tmp-6-1739350156105
-[2025-02-12 09:49:18] INFO: [Mongoose] products.findOne {"code":"101ccbcv"} {}
-[2025-02-12 09:49:18] INFO: [Mongoose] products.insertOne {"timeStamp":"1739350158642","name":"watch","description":"this are wristwatches","code":"101ccbcv","category":"Hublot","photos":[{"url":"https://res.cloudinary.com/organicstall/image/upload/v1739350157/ixtwiujpjb7liblcoc3l.png","id":"ixtwiujpjb7liblcoc3l","_id":"67ac608e2ad6ec51fd837664"}],"price":200,"stock":10,"_id":"67ac608e2ad6ec51fd837663"} {}
-[2025-02-12 09:49:18] INFO: Created product successfully: 67ac608e2ad6ec51fd837663
-[2025-02-12 09:49:18] INFO: Product created successfully: 67ac608e2ad6ec51fd837663
-[2025-02-12 09:49:24] INFO: [Mongoose] products.find {} {}
-[2025-02-12 09:49:24] INFO: Fetched all products successfully
-[2025-02-12 09:49:24] INFO: Fetched all products successfully
-[2025-02-12 10:05:23] INFO: [Mongoose] products.find {} {}
-[2025-02-12 10:05:23] INFO: Fetched all products successfully
-[2025-02-12 10:05:23] INFO: Fetched all products successfully
-[2025-02-12 16:11:52] INFO: Database connection established
-[2025-02-12 16:11:52] INFO: Server is listening on port 8080
-[2025-02-12 19:29:35] INFO: MongoDB disconnected. Attempting to reconnect...
-[2025-02-12 19:29:40] INFO: Successfully connected to MongoDB
-[2025-02-13 09:57:26] INFO: MongoDB disconnected. Attempting to reconnect...
-[2025-02-13 09:57:27] INFO: MongoDB disconnected. Attempting to reconnect...
-[2025-02-13 09:57:27] INFO: Successfully connected to MongoDB
-[2025-02-13 09:57:27] INFO: Successfully connected to MongoDB
+[2025-02-13 19:50:12] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 19:50:13] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":14} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDcyNjEzLCJleHAiOjE3Mzk3MzE4MTN9.lPNMSlrZxAVtbJnvR-yxyA9hLkcX5a1YGUHDI8qmsCI"],"lastLogin":"2025-02-13T18:50:13.136Z","updatedAt":"2025-02-13T18:50:13.140Z"},"$inc":{"__v":1}}
+[2025-02-13 19:54:32] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 19:54:32] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":15} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDcyODcyLCJleHAiOjE3Mzk3MzIwNzJ9.S3U4axWAKVQinHBVPaSKAQFLbKdhUnPvm884V13CVeU"],"lastLogin":"2025-02-13T18:54:32.591Z","updatedAt":"2025-02-13T18:54:32.593Z"},"$inc":{"__v":1}}
+[2025-02-13 19:59:28] INFO: Database connection established
+[2025-02-13 19:59:28] INFO: Server is listening on port 8080
+[2025-02-13 19:59:32] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 19:59:33] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":16} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDczMTczLCJleHAiOjE3Mzk3MzIzNzN9.7OGh2P5qSsTyEju7mPupoaOgFtY7ln7RG4vt56iR_lo"],"lastLogin":"2025-02-13T18:59:33.063Z","updatedAt":"2025-02-13T18:59:33.068Z"},"$inc":{"__v":1}}
+[2025-02-13 20:00:54] INFO: Database connection established
+[2025-02-13 20:00:54] INFO: Server is listening on port 8080
+[2025-02-13 20:01:10] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 20:01:11] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":17} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDczMjcxLCJleHAiOjE3Mzk3MzI0NzF9.DHwzCFMvX_0bRHjqKlPgHJkgqs-mrs-fSrHm8gQatqM"],"lastLogin":"2025-02-13T19:01:11.303Z","updatedAt":"2025-02-13T19:01:11.310Z"},"$inc":{"__v":1}}
+[2025-02-13 20:03:50] INFO: Database connection established
+[2025-02-13 20:03:50] INFO: Server is listening on port 8080
+[2025-02-13 20:15:54] INFO: Database connection established
+[2025-02-13 20:15:54] INFO: Server is listening on port 8080
+[2025-02-13 20:18:05] INFO: Database connection established
+[2025-02-13 20:18:05] INFO: Server is listening on port 8080
+[2025-02-13 20:18:42] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 20:18:43] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":18} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDc0MzIzLCJleHAiOjE3Mzk3MzM1MjN9.MyTjpVmVvoksvwAlp3gAUn7JiDZtPa0BglnXbpGW-xU"],"lastLogin":"2025-02-13T19:18:43.050Z","updatedAt":"2025-02-13T19:18:43.054Z"},"$inc":{"__v":1}}
+[2025-02-13 20:19:08] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 20:19:09] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":19} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDc0MzQ5LCJleHAiOjE3Mzk3MzM1NDl9.8SlI-d1D5HJ_rPfW3PTd0Sqz67rhtlrGH_XsdD1m6qo"],"lastLogin":"2025-02-13T19:19:09.253Z","updatedAt":"2025-02-13T19:19:09.255Z"},"$inc":{"__v":1}}
+[2025-02-13 20:20:08] INFO: Database connection established
+[2025-02-13 20:20:08] INFO: Server is listening on port 8080
+[2025-02-13 20:20:25] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 20:20:25] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":20} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDc0NDI1LCJleHAiOjE3Mzk3MzM2MjV9.ftzbCo47pbiIvBwAfiZQDCFrz2ebwkCiono6v2gVQVY"],"lastLogin":"2025-02-13T19:20:25.552Z","updatedAt":"2025-02-13T19:20:25.558Z"},"$inc":{"__v":1}}
+[2025-02-13 20:38:14] INFO: Database connection established
+[2025-02-13 20:38:14] INFO: Server is listening on port 8080
+[2025-02-13 20:38:36] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 20:38:36] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":21} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDc1NTE2LCJleHAiOjE3Mzk3MzQ3MTZ9.NCv_05qX6YRi1oMFQtJ1MUJ7ZX7unBekMCLK_Gk7PuE"],"lastLogin":"2025-02-13T19:38:36.917Z","updatedAt":"2025-02-13T19:38:36.922Z"},"$inc":{"__v":1}}
+[2025-02-13 20:44:45] INFO: Database connection established
+[2025-02-13 20:44:45] INFO: Server is listening on port 8080
+[2025-02-13 20:44:49] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 20:44:49] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":22} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDc1ODg5LCJleHAiOjE3Mzk3MzUwODl9.pW_Nj3QraErHBckvLHLhjGD_ZpB2rkleUpRr64Y6j0s"],"lastLogin":"2025-02-13T19:44:49.375Z","updatedAt":"2025-02-13T19:44:49.380Z"},"$inc":{"__v":1}}
+[2025-02-13 20:47:13] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 20:47:14] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":23} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDc2MDM0LCJleHAiOjE3Mzk3MzUyMzR9.B0GEDJxp2ZLNDU3wTeoJU10-sBUKy2kuEzN1v9KWmIg"],"lastLogin":"2025-02-13T19:47:14.088Z","updatedAt":"2025-02-13T19:47:14.089Z"},"$inc":{"__v":1}}
+[2025-02-13 20:52:20] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 20:52:21] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":24} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDc2MzQxLCJleHAiOjE3Mzk3MzU1NDF9.uiie6EM1S_i_NY0ICNcSUykBudP-74lK1mHfd1M9s0w"],"lastLogin":"2025-02-13T19:52:21.336Z","updatedAt":"2025-02-13T19:52:21.337Z"},"$inc":{"__v":1}}
+[2025-02-13 20:52:27] INFO: [Mongoose] products.find {} {}
+[2025-02-13 20:52:27] INFO: Fetched all products successfully
+[2025-02-13 20:52:27] INFO: Fetched all products successfully
+[2025-02-13 21:06:32] INFO: [Mongoose] products.find {} {}
+[2025-02-13 21:06:32] INFO: Fetched all products successfully
+[2025-02-13 21:06:32] INFO: Fetched all products successfully
+[2025-02-13 21:06:51] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-13 21:06:52] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":25} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM5NDc3MjEyLCJleHAiOjE3Mzk3MzY0MTJ9.lPpm7QZWdgDkx1eF9z8QtqY8rKso65NmVNLf_88BjZo"],"lastLogin":"2025-02-13T20:06:52.202Z","updatedAt":"2025-02-13T20:06:52.202Z"},"$inc":{"__v":1}}
+[2025-02-13 21:14:31] INFO: [Mongoose] products.find {} {}
+[2025-02-13 21:14:31] INFO: Fetched all products successfully
+[2025-02-13 21:14:31] INFO: Fetched all products successfully
+[2025-02-13 21:14:57] INFO: [Mongoose] products.find {"category":"Dessert"} {}
+[2025-02-13 21:14:57] INFO: Fetched products for category: Dessert
+[2025-02-13 21:14:57] INFO: Fetched products for category: Dessert
+[2025-02-13 21:15:00] INFO: [Mongoose] products.find {"category":"Ornament"} {}
+[2025-02-13 21:15:00] INFO: Fetched products for category: Ornament
+[2025-02-13 21:15:00] INFO: Fetched products for category: Ornament
+[2025-02-13 21:15:01] INFO: [Mongoose] products.find {} {}
+[2025-02-13 21:15:01] INFO: Fetched all products successfully
+[2025-02-13 21:15:01] INFO: Fetched all products successfully
