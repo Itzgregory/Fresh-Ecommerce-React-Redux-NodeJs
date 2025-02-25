@@ -11,8 +11,18 @@ export function AdminContainer() {
 
   useEffect(() => {
     listProducts()
-      .then((resp) => setList(resp.map(product => (product))))
-      .catch((error) => handleError(error)); 
+      .then((resp) => {
+        if (Array.isArray(resp)) {
+          setList(resp);
+        } else {
+          setList([]);
+          console.warn('Expected array response from listProducts, got:', resp);
+        }
+      })
+      .catch((error) => {
+        handleError(error);
+        setList([]);
+      });
   }, []);
 
   const addProduct = () => {

@@ -12,10 +12,7 @@ export const OrderDetailContainer = () => {
 
   useEffect(() => {
     listOrdersById(id)
-    .then(resp => setOrder(resp.reduce(( properties, property ) => ({
-      ...properties,
-      property
-    } ))))
+    .then(resp => setOrder(resp[0] || {}))
     }, [id])
   
     const backToOrder = () => {

@@ -5,9 +5,10 @@ export const listProducts = async (id) => {
   try {
     const url = id ? `/products/category/${id}` : `/products/list/`;
     const query = await axiosInstance.get(url);
-    return query.data;
+    return query.data?.data || []; 
   } catch (error) {
     handleError(error);
+    return [];
   }
 };
 

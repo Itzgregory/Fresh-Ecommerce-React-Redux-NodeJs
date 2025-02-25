@@ -17,9 +17,11 @@ export function AddProductContainer() {
     formData.append('description', data.description);
     formData.append('code', data.code);
     formData.append('category', data.category);
-    formData.append('photo', data.photo[0]);
-    formData.append('photo2', data.photo2[0]);
-    formData.append('photo3', data.photo3[0]);
+
+    data.photos.forEach((photo) => {
+      formData.append('photos', photo);
+    });
+
     formData.append('price', data.price);
     formData.append('stock', data.stock);
 
@@ -33,7 +35,7 @@ export function AddProductContainer() {
         data: null,
       });
     } catch (error) {
-      handleError(error); 
+      handleError(error);
     }
   };
 

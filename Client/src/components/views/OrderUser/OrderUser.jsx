@@ -20,7 +20,7 @@ export const OrderUserList = ({ items, order, back }) => {
                     </div>
                     <div className='orderUserBody'>
                         <div className='orderUserImage'>
-                            <img className="fotoCart" src={item.photo} alt={"logo"} />
+                           <img className="fotoCart" src={item.photo || '/default-image.png'} alt={item.name || 'Product Image'} />
                         </div>
                         <div className='orderUserDescription' >
                             <p>Descripcion:</p>
