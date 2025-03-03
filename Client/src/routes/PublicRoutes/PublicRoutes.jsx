@@ -1,33 +1,33 @@
-import { Navigate, Route, Routes } from 'react-router';
+import { Navigate, Route, Routes } from 'react-router'
 import { 
     Cart, OrderDetailContainer, OrderListContainer, 
     ItemDetailContainer, ItemListContainer, 
     RegisterContainer, LoginContainer, AdminContainer
-} from '../../components';
-import { EndBuy, OrderFail, PageNotFound } from '../../components/';
-import { useSelector } from 'react-redux';
-import { useEffect, useCallback } from 'react';
-import { useNavigate,  } from 'react-router-dom';
-import { isTokenValid} from '../../Utils/auth/authUtils';
-
+} from '../../components'
+import { EndBuy, OrderFail, PageNotFound } from '../../components/'
+import { useSelector } from 'react-redux'
+import { useEffect, useCallback } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { isTokenValid } from '../../Utils/auth/authUtils'
 
 export const PublicRoutes = () => {    
-    const { User, users, activeUserId } = useSelector(state => state.user);
-    const navigate = useNavigate();
+    const { User, users, activeUserId } = useSelector(state => state.user)
+    const navigate = useNavigate()
     
     const isAuthenticated = useCallback(() => {
-        return User && isTokenValid() && users[activeUserId];
-    }, [User, users, activeUserId]);
+        return User && isTokenValid() && users[activeUserId]
+    }, [User, users, activeUserId])
 
     const checkUserAccess = useCallback(() => {
-        if (isAuthenticated() && User?.role === 'admin') {
-            navigate('/admin', { replace: true });
+        // Only redirect if on the main page to avoid redirect loops
+        if (window.location.pathname === '/' && isAuthenticated() && User?.role === 'admin') {
+            navigate('/admin', { replace: true })
         }
-    }, [isAuthenticated, User, navigate]);
+    }, [isAuthenticated, User, navigate])
 
     useEffect(() => {
-        checkUserAccess();
-    }, [checkUserAccess]);
+        checkUserAccess()
+    }, [checkUserAccess])
 
     return (
         <Routes>
@@ -46,7 +46,7 @@ export const PublicRoutes = () => {
             <Route path="/endbuy" element={<EndBuy />} />
             <Route path="/failorder" element={<OrderFail />} />
             <Route path="/list/:id" element={isTokenValid() ? <OrderDetailContainer /> : <Navigate to="/login" replace />} />
-            <Route path="/*" element={<PageNotFound />} />
+            <Route path="*" element={<PageNotFound />} />
         </Routes>
-    );
-};
+    )
+}

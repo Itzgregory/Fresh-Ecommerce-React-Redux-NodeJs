@@ -1,7 +1,7 @@
 import './ItemDetailContainer.css'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { ItemDetail } from '../../../'
+import { ItemDetail, PageNotFound } from '../../../'
 import { useDispatch, useSelector } from 'react-redux'
 import { getProductsById, addProduct, getProducts } from "../../../../features"
 
@@ -9,7 +9,7 @@ import { getProductsById, addProduct, getProducts } from "../../../../features"
 export function ItemDetailContainer() {
   const [Add, setAdd] = useState(false)
   const [Photo, setPhoto] = useState()
-
+  const [invalidId, setInvalidId] = useState(false)
 
   const { id } = useParams()
 
@@ -25,20 +25,37 @@ export function ItemDetailContainer() {
   const changePhoto = (e) => {
     setPhoto(e.target.getAttribute('src'))
   }
+  
   useEffect(() => {
-    dispatch(getProductsById(id))
+    if (id && /^\d+$/.test(id)) {
+      dispatch(getProductsById(id))
+    } else {
+      setInvalidId(true)
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
+  useEffect(() => {
+    if (productByIdState.error && productByIdState.error.includes("not found")) {
+      setInvalidId(true)
+    }
+  }, [productByIdState.error])
+
+  if (invalidId) {
+    return <PageNotFound />
+  }
 
   return (
     <>
       <div className="detailProduct">
         {productByIdState.loading ? <h4>Searching Products...</h4>
           :
-          <ItemDetail changePhoto={changePhoto} photo={Photo} product={productByIdState.productById} onAdd={onAdd} Add={Add} />}
+          productByIdState.productById ? 
+            <ItemDetail changePhoto={changePhoto} photo={Photo} product={productByIdState.productById} onAdd={onAdd} Add={Add} /> 
+            : 
+            productByIdState.error ? <div className="error-message">{productByIdState.error}</div> : null
+        }
       </div>
     </>
   )
 }
-

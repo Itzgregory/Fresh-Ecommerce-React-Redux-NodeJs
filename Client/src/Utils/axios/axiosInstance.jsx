@@ -1,6 +1,4 @@
 import axios from 'axios';
-import { logoutUserStatus } from '../../features';
-import configureStore from '../../store/store';
 import { isTokenValid, clearAuthData, getAuthToken } from '../auth/authUtils';
 
 const URL_BASE = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_API_URL_PROD : process.env.REACT_APP_API_URL_DEV;
@@ -16,6 +14,31 @@ const axiosInstance = axios.create({
 });
 
 const getCSRFToken = () => document.querySelector('meta[name="csrf-token"]')?.content;
+
+// Function to handle logout logic
+const handleLogout = () => {
+    clearAuthData();
+    
+    // Handle logout without direct store dependency
+    // We'll navigate to login page immediately
+    if (window.location.pathname !== '/login') {
+        window.location.href = '/login';
+    }
+    
+    // Then attempt to dispatch the action
+    setTimeout(() => {
+        // Use dynamic import to get the store and logout action
+        Promise.all([
+            import('../../store/store'),
+            import('../../features/user/user')
+        ]).then(([storeModule, userModule]) => {
+            const store = storeModule.default;
+            store.dispatch(userModule.logoutUserStatus());
+        }).catch(err => {
+            console.error("Failed to dispatch logout action:", err);
+        });
+    }, 0);
+};
 
 axiosInstance.interceptors.request.use(
     (config) => {
@@ -38,12 +61,7 @@ axiosInstance.interceptors.request.use(
         if (token && isTokenValid()) {
             config.headers.Authorization = `Bearer ${token}`;
         } else {
-            clearAuthData();
-            configureStore.dispatch(logoutUserStatus());
-
-            if (!isLoginPage) {
-                window.location.href = '/login';
-            }
+            handleLogout();
         }
 
         return config;
@@ -59,12 +77,7 @@ axiosInstance.interceptors.response.use(
         const isAuthRoute = publicRoutes.some(route => error.config.url.startsWith(route));
 
         if ((isUnauthorized || isForbidden) && !isAuthRoute) {
-            clearAuthData();
-            configureStore.dispatch(logoutUserStatus());
-
-            if (window.location.pathname !== '/login') {
-                window.location.href = '/login';
-            }
+            handleLogout();
         }
 
         if (error.response?.status === 419) { 

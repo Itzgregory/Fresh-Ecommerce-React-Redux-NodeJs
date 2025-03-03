@@ -3,11 +3,14 @@ import { userLogin, logOutUser, getLogedUser } from '../../api';
 import { setAuthToken, clearAuthData } from '../../Utils/auth/authUtils';
 import handleError from '../../Utils/HandleErrors/ErrorHandler';
 
+const storedUsers = JSON.parse(localStorage.getItem('users')) || {};
+const activeUserId = localStorage.getItem('activeUser') || null;
+
 const initialState = {
     loading: false,
-    User: null,
-    activeUserId: null,
-    users: {},
+    User: activeUserId ? storedUsers[activeUserId] : null,
+    activeUserId: activeUserId,
+    users: storedUsers,
     error: ''
 };
 
@@ -57,6 +60,7 @@ const userSlice = createSlice({
             if (state.users[userId]) {
                 state.activeUserId = userId;
                 state.User = state.users[userId];
+                localStorage.setItem('activeUser', userId);
             }
         }
     },
@@ -92,3 +96,6 @@ const userSlice = createSlice({
 });
 
 export const userReducer = userSlice.reducer;
+export const { switchActiveUser } = userSlice.actions;
+
+console.log("userSlice initialized:", userReducer);

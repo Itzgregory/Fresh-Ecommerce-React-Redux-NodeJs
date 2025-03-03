@@ -582,3 +582,85 @@
 [2025-02-25 01:53:17] INFO: [Mongoose] products.find {} {}
 [2025-02-25 01:53:17] INFO: Fetched all products successfully
 [2025-02-25 01:53:17] INFO: Fetched all products successfully
+[2025-02-25 01:57:01] INFO: [Mongoose] products.find {} {}
+[2025-02-25 01:57:01] INFO: Fetched all products successfully
+[2025-02-25 01:57:01] INFO: Fetched all products successfully
+[2025-02-25 01:57:04] INFO: [Mongoose] products.findOne {"_id":"67abdf92da6dd3d2c0646580"} {}
+[2025-02-25 01:57:04] INFO: Fetched product successfully: 67abdf92da6dd3d2c0646580
+[2025-02-25 01:57:04] INFO: Fetched product successfully: 67abdf92da6dd3d2c0646580
+[2025-02-25 01:57:10] INFO: [Mongoose] products.find {} {}
+[2025-02-25 01:57:10] INFO: Fetched all products successfully
+[2025-02-25 01:57:10] INFO: Fetched all products successfully
+[2025-02-25 01:57:50] INFO: [Mongoose] products.find {} {}
+[2025-02-25 01:57:50] INFO: Fetched all products successfully
+[2025-02-25 01:57:50] INFO: Fetched all products successfully
+[2025-02-25 01:58:06] INFO: [Mongoose] products.find {} {}
+[2025-02-25 01:58:06] INFO: Fetched all products successfully
+[2025-02-25 01:58:06] INFO: Fetched all products successfully
+[2025-02-26 14:49:54] INFO: Database connection established
+[2025-02-26 14:49:54] INFO: Server is listening on port 8080
+[2025-02-26 14:50:33] INFO: [Mongoose] products.find {} {}
+[2025-02-26 14:50:33] INFO: Fetched all products successfully
+[2025-02-26 14:50:33] INFO: Fetched all products successfully
+[2025-02-26 14:50:49] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-26 14:50:50] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":50} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQwNTc3ODUwLCJleHAiOjE3NDA4MzcwNTB9.wGlAM0BMdt9RwiqE3BQhacxRr4UwnCe0G_AFddRtHac"],"lastLogin":"2025-02-26T13:50:50.400Z","updatedAt":"2025-02-26T13:50:50.406Z"},"$inc":{"__v":1}}
+[2025-02-26 14:50:50] INFO: [Mongoose] carts.find {} {}
+[2025-02-26 14:50:50] INFO: [Mongoose] products.find {} {}
+[2025-02-26 14:50:50] INFO: Fetched all products successfully
+[2025-02-26 14:50:50] INFO: Fetched all products successfully
+[2025-02-26 14:51:18] INFO: [Mongoose] products.find {} {}
+[2025-02-26 14:51:18] INFO: Fetched all products successfully
+[2025-02-26 14:51:18] INFO: Fetched all products successfully
+[2025-02-26 14:51:35] INFO: [Mongoose] products.find {} {}
+[2025-02-26 14:51:35] INFO: Fetched all products successfully
+[2025-02-26 14:51:35] INFO: Fetched all products successfully
+[2025-02-26 14:51:40] INFO: [Mongoose] products.findOne {"_id":"67abdf92da6dd3d2c0646580"} {}
+[2025-02-26 14:51:40] INFO: Fetched product successfully: 67abdf92da6dd3d2c0646580
+[2025-02-26 14:51:40] INFO: Fetched product successfully: 67abdf92da6dd3d2c0646580
+[2025-02-26 14:52:02] INFO: [Mongoose] products.find {} {}
+[2025-02-26 14:52:02] INFO: Fetched all products successfully
+[2025-02-26 14:52:02] INFO: Fetched all products successfully
+[2025-02-26 14:52:02] INFO: [Mongoose] products.find {} {}
+[2025-02-26 14:52:02] INFO: Fetched all products successfully
+[2025-02-26 14:52:02] INFO: Fetched all products successfully
+[2025-02-26 14:52:31] INFO: [Mongoose] products.find {} {}
+[2025-02-26 14:52:31] INFO: Fetched all products successfully
+[2025-02-26 14:52:31] INFO: Fetched all products successfully
+[2025-02-26 14:52:44] INFO: [Mongoose] products.find {} {}
+[2025-02-26 14:52:44] INFO: Fetched all products successfully
+[2025-02-26 14:52:44] INFO: Fetched all products successfully
+[2025-02-27 13:23:25] INFO: Database connection established
+[2025-02-27 13:23:25] INFO: Server is listening on port 8080
+[2025-02-27 13:23:46] INFO: [Mongoose] products.find {} {}
+[2025-02-27 13:23:46] INFO: Fetched all products successfully
+[2025-02-27 13:23:46] INFO: Fetched all products successfully
+[2025-02-27 13:45:58] INFO: [Mongoose] users.findOne {"email":"btsm2876@gmail.com"} {}
+[2025-02-27 13:45:58] INFO: [Mongoose] users.updateOne {"_id":"67a541bc084d72c40c33cd7e","__v":51} {"$set":{"tokens":["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTU0MWJjMDg0ZDcyYzQwYzMzY2Q3ZSIsImVtYWlsIjoiYnRzbTI4NzZAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQwNjYwMzU4LCJleHAiOjE3NDA5MTk1NTh9.OWdhXIiQeJdvFuPiULFq2XBnB3WqTCv9EBaMMQkB0Jo"],"lastLogin":"2025-02-27T12:45:58.508Z","updatedAt":"2025-02-27T12:45:58.513Z"},"$inc":{"__v":1}}
+[2025-02-27 13:45:58] INFO: [Mongoose] carts.find {} {}
+[2025-02-27 13:45:58] INFO: [Mongoose] products.find {} {}
+[2025-02-27 13:45:58] INFO: Fetched all products successfully
+[2025-02-27 13:45:58] INFO: Fetched all products successfully
+[2025-02-27 13:46:07] INFO: [Mongoose] products.find {} {}
+[2025-02-27 13:46:07] INFO: Fetched all products successfully
+[2025-02-27 13:46:07] INFO: Fetched all products successfully
+[2025-02-27 13:46:19] INFO: [Mongoose] products.find {} {}
+[2025-02-27 13:46:19] INFO: Fetched all products successfully
+[2025-02-27 13:46:19] INFO: Fetched all products successfully
+[2025-02-27 14:01:42] INFO: [Mongoose] products.find {"category":"Ornament"} {}
+[2025-02-27 14:01:42] INFO: Fetched products for category: Ornament
+[2025-02-27 14:01:42] INFO: Fetched products for category: Ornament
+[2025-02-27 14:01:44] INFO: [Mongoose] products.find {"category":"Kitchen"} {}
+[2025-02-27 14:01:44] INFO: Fetched products for category: Kitchen
+[2025-02-27 14:01:44] INFO: Fetched products for category: Kitchen
+[2025-02-27 14:01:46] INFO: [Mongoose] products.find {"category":"Drink"} {}
+[2025-02-27 14:01:46] INFO: Fetched products for category: Drink
+[2025-02-27 14:01:46] INFO: Fetched products for category: Drink
+[2025-02-27 14:01:48] INFO: [Mongoose] products.find {"category":"Dessert"} {}
+[2025-02-27 14:01:48] INFO: Fetched products for category: Dessert
+[2025-02-27 14:01:48] INFO: Fetched products for category: Dessert
+[2025-02-27 14:02:46] INFO: [Mongoose] products.find {"category":"Ornament"} {}
+[2025-02-27 14:02:46] INFO: Fetched products for category: Ornament
+[2025-02-27 14:02:46] INFO: Fetched products for category: Ornament
+[2025-02-27 14:03:00] INFO: [Mongoose] products.find {} {}
+[2025-02-27 14:03:00] INFO: Fetched all products successfully
+[2025-02-27 14:03:00] INFO: Fetched all products successfully

@@ -136,3 +136,18 @@
 [2025-02-25 01:52:46] ERROR: Error fetching product orders: Failed to fetch product
 [2025-02-25 01:53:19] ERROR: Failed to fetch product: Cast to ObjectId failed for value "orders" (type string) at path "_id" for model "products"
 [2025-02-25 01:53:19] ERROR: Error fetching product orders: Failed to fetch product
+[2025-02-25 01:57:10] ERROR: ForbiddenError: invalid csrf token
+    at csrf (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\csurf\index.js:112:19)
+    at C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\src\server\server.js:37:5
+    at Layer.handle [as handle_request] (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:280:10)
+    at cookieParser (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Gregory\Desktop\project\Fresh-Ecommerce-React-Redux-NodeJs\Server\node_modules\express\lib\router\index.js:328:13)
+[2025-02-26 14:51:20] ERROR: Failed to fetch product: Cast to ObjectId failed for value "orders" (type string) at path "_id" for model "products"
+[2025-02-26 14:51:20] ERROR: Error fetching product orders: Failed to fetch product
+[2025-02-26 14:52:40] ERROR: Failed to fetch product: Cast to ObjectId failed for value "orders" (type string) at path "_id" for model "products"
+[2025-02-26 14:52:40] ERROR: Error fetching product orders: Failed to fetch product

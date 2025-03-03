@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { listProducts, listById } from '../../api';
+import handleError from '../../Utils/HandleErrors/ErrorHandler';
 
 const initialState = {
     loading: false,
@@ -11,18 +12,25 @@ const initialState = {
 export const getProducts = createAsyncThunk('GET_PRODUCTS_LIST', async (id, { rejectWithValue }) => {
     try {
         const response = await listProducts(id);
-        return response.data; 
+        return response.data.data; 
     } catch (error) {
-        return rejectWithValue(error.response?.data || "Failed to fetch products");
+        handleError("Failed to fetch products");
     }
 });
 
 export const getProductsById = createAsyncThunk('GET_PRODUCTS_BY_ID', async (id, { rejectWithValue }) => {
+    if (!id || (typeof id === 'string' && !/^\d+$/.test(id))) {
+        return rejectWithValue("Invalid product ID");
+    }
+    
     try {
         const response = await listById(id);
         return response.data; 
     } catch (error) {
-        return rejectWithValue(error.response?.data || "Failed to fetch product details");
+        if (error.response?.status === 404) {
+            handleError("product not found");
+        }
+        return rejectWithValue(error.response?.data );
     }
 });
 
@@ -30,7 +38,6 @@ const productSlice = createSlice({
     name: 'products',
     initialState,
     extraReducers: (builder) => {
-        /*--------  Get All Products    ----------*/
         builder.addCase(getProducts.pending, (state) => {
             state.loading = true;
         });
